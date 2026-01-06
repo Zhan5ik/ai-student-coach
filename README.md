@@ -5,8 +5,11 @@ This project aims to build an explainable machine learning system that predicts 
 # Overview
 This project implements an explainable decision-support system for identifying academically at-risk students and generating personalized intervention strategies.
 Unlike traditional classification approaches that focus solely on prediction accuracy, this system emphasizes:
+
 •	interpretability,
+
 •	prioritization,
+
 •	and actionable recommendations.
 ________________________________________
 # Problem Motivation
@@ -16,27 +19,39 @@ This project explores how machine learning + explainability can support human de
 ________________________________________
 # Approach
 The system follows a multi-stage pipeline:
-1.	Risk Prediction
+1.	Risk Prediction:
+
 A supervised ML model estimates the probability that a student is academically at risk.
-2.	Explainability (SHAP)
+2.	Explainability (SHAP):
+
 SHAP values are used to identify which features contribute most to each individual prediction.
-3.	What-if Analysis
+3.	What-if Analysis:
+
 Counterfactual scenarios simulate how changes in behavior (e.g., study time, failures) affect risk.
-4.	Decision Logic
+4.	Decision Logic:
+
 A rule-based layer converts predictions and explanations into prioritized intervention strategies.
 ________________________________________
 # Key Features
 •	Individual-level explanations using SHAP waterfall plots
+
 •	Batch prioritization of high-risk students
+
 •	Scenario-based “what-if” risk reduction analysis
+
 •	Human-readable recommendations instead of raw predictions
 ________________________________________
 # Example Output
 •	High predicted risk due to accumulated academic failures
+
 •	Secondary risk contribution from low study time
+
 •	Recommended actions:
+  
   o	Academic counseling
+  
   o	Structured study plan
+  
   o	Urgent intervention (for critical cases)
 ________________________________________
 # Technologies
