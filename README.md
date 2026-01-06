@@ -22,12 +22,15 @@ The system follows a multi-stage pipeline:
 1.	Risk Prediction:
 
 A supervised ML model estimates the probability that a student is academically at risk.
+
 2.	Explainability (SHAP):
 
 SHAP values are used to identify which features contribute most to each individual prediction.
+
 3.	What-if Analysis:
 
 Counterfactual scenarios simulate how changes in behavior (e.g., study time, failures) affect risk.
+
 4.	Decision Logic:
 
 A rule-based layer converts predictions and explanations into prioritized intervention strategies.
@@ -48,11 +51,11 @@ ________________________________________
 
 •	Recommended actions:
   
-  o	Academic counseling
+    o	Academic counseling
   
-  o	Structured study plan
+    o	Structured study plan
   
-  o	Urgent intervention (for critical cases)
+    o	Urgent intervention (for critical cases)
 ________________________________________
 # Technologies
 •	Python
