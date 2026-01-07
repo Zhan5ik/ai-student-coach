@@ -22,6 +22,7 @@ The system follows a multi-stage pipeline:
 1.	Risk Prediction:
 
 A supervised ML model estimates the probability that a student is academically at risk.
+<img width="850" height="600" alt="Image" src="https://github.com/user-attachments/assets/6ce79c65-00cf-4e74-a88a-f1cfcf215d23" />
 
 2.	Explainability (SHAP):
 
@@ -31,6 +32,7 @@ SHAP values are used to identify which features contribute most to each individu
 3.	What-if Analysis:
 
 Counterfactual scenarios simulate how changes in behavior (e.g., study time, failures) affect risk.
+<img width="454" height="162" alt="Image" src="https://github.com/user-attachments/assets/eb2d7eb2-f4b2-46ba-8636-a81cc986f3b6" />
 
 4.	Decision Logic:
 
