@@ -1,78 +1,160 @@
-# AI Student Coach
-Explainable AI system to predict academic risks and provide recommendations for students
-This project aims to build an explainable machine learning system that predicts academic risks for students and provides actionable recommendations.
+##AI Student Coach
 
-# Overview
-This project implements an explainable decision-support system for identifying academically at-risk students and generating personalized intervention strategies.
-Unlike traditional classification approaches that focus solely on prediction accuracy, this system emphasizes:
+Explainable Decision-Support System for Academic Risk Assessment
 
-•	interpretability,
+AI Student Coach is an explainable machine learning system designed to identify students at academic risk and generate personalized, actionable intervention strategies.
+Unlike typical ML projects that stop at prediction accuracy, this system focuses on interpretability, prioritization, and decision support.
 
-•	prioritization,
+The project demonstrates how predictive models can be combined with explainable AI (XAI) and rule-based logic to support real-world educational decisions.
 
-•	and actionable recommendations.
-________________________________________
-# Problem Motivation
-Academic risk is often identified too late and without clear explanations.
-Simple “at-risk” flags provide limited value to educators and administrators.
-This project explores how machine learning + explainability can support human decision-making, not replace it.
-________________________________________
-# Approach
-The system follows a multi-stage pipeline:
-1.	Risk Prediction:
+#🎯 Project Goals
 
-A supervised ML model estimates the probability that a student is academically at risk.
-<img width="850" height="600" alt="Image" src="https://github.com/user-attachments/assets/6ce79c65-00cf-4e74-a88a-f1cfcf215d23" />
+Predict academic risk probability for students
 
-2.	Explainability (SHAP):
+Explain why a student is at risk using SHAP (Explainable AI)
 
-SHAP values are used to identify which features contribute most to each individual prediction.
-<img width="426" height="680" alt="Image" src="https://github.com/user-attachments/assets/eda8c8f1-e665-44ee-af1a-0a09a94cc3c5" />
+Simulate what-if scenarios to evaluate possible interventions
 
-3.	What-if Analysis:
+Generate personalized recommendations based on causal factors
 
-Counterfactual scenarios simulate how changes in behavior (e.g., study time, failures) affect risk.
-<img width="454" height="162" alt="Image" src="https://github.com/user-attachments/assets/eb2d7eb2-f4b2-46ba-8636-a81cc986f3b6" />
+Prioritize students who need urgent academic support
 
-4.	Decision Logic:
+#🧠 System Overview
 
-A rule-based layer converts predictions and explanations into prioritized intervention strategies.
-________________________________________
-# Key Features
-•	Individual-level explanations using SHAP waterfall plots
+The system follows a multi-stage decision pipeline:
 
-•	Batch prioritization of high-risk students
+Risk Prediction
+A logistic regression model estimates the probability that a student is academically at risk.
 
-•	Scenario-based “what-if” risk reduction analysis
+Explainability (XAI)
+SHAP values are used to explain how each feature contributes to an individual prediction.
 
-•	Human-readable recommendations instead of raw predictions
-________________________________________
-# Example Output
-•	High predicted risk due to accumulated academic failures
+What-If Analysis
+Counterfactual scenarios (e.g. increasing study time or reducing absences) simulate how risk changes under interventions.
 
-•	Secondary risk contribution from low study time
+Decision Logic
+Model predictions + SHAP explanations are translated into concrete academic actions.
 
-•	Recommended actions:
-  
-    o	Academic counseling
-  
-    o	Structured study plan
-  
-    o	Urgent intervention (for critical cases)
-________________________________________
-# Technologies
-•	Python
+This turns a simple classifier into a decision-support system for educators and administrators.
 
-•	scikit-learn
+#📦 Repository Structure
+ai-student-coach/
+│
+├── notebooks/
+│   └── student_risk_decision_support.ipynb
+│      Main notebook demonstrating the full pipeline
+│
+├── data/
+│   └── student-mat.csv
+│      Sample academic dataset (UCI Student Performance Dataset)
+│
+├── src/
+│   ├── decision_logic.py
+│   ├── what_if.py
+│   └── utils.py
+│      Modularized core logic used in the notebook
+│
+├── screenshots/
+│   ├── shap_summary.png
+│   ├── student_waterfall.png
+│   └── what_if_scenarios.png
+│      Visual explanations and scenario analysis outputs
+│
+└── README.md
 
-•	SHAP
+#🚀 How to Run This Project
+Option 1: Run in Google Colab (Recommended)
 
-•	pandas / numpy
-________________________________________
-# Disclaimer
-This system is not a diagnostic or medical tool.
-It is designed as a decision-support aid to assist educators in prioritizing interventions.
-________________________________________
-# Author Note
-This project reflects a shift from building models “for accuracy” toward designing human-centered AI systems that emphasize interpretability and responsible decision-making.
+Open the notebook:
+notebooks/student_risk_decision_support.ipynb
 
+Click “Open in Colab”
+
+Run cells from top to bottom
+
+No local setup required.
+
+Option 2: Run Locally
+git clone https://github.com/Zhan5ik/ai-student-coach.git
+cd ai-student-coach
+
+
+Create environment and install dependencies:
+
+pip install -r requirements.txt
+
+
+Open the notebook:
+
+jupyter notebook notebooks/student_risk_decision_support.ipynb
+
+📌 Example Outputs
+🔹 SHAP Summary Plot
+
+Shows global feature importance across all students and highlights key risk drivers such as past failures, study time, and absences.
+
+🔹 Individual Waterfall Plot
+
+Explains why a specific student is predicted to be at risk by showing feature-level contributions to the final probability.
+
+🔹 What-If Scenario Analysis
+
+Demonstrates how risk probability changes under simulated interventions, such as:
+
+Increasing study time
+
+Reducing past failures
+
+Improving attendance
+
+These outputs allow decision-makers to evaluate which actions are most effective.
+
+🧩 Decision Logic Example
+
+Instead of raw predictions, the system produces interpretable decisions:
+
+Risk probability: 0.82
+
+Key contributors: failures, low study time
+
+Recommended actions:
+
+Academic counseling
+
+Structured study plan
+
+Urgent academic intervention
+
+This bridges the gap between ML predictions and real-world action.
+
+📊 Dataset
+
+This project uses the UCI Student Performance Dataset, containing academic, social, and behavioral attributes of students.
+The dataset is used strictly for educational and demonstration purposes.
+
+⚠️ Limitations
+
+Dataset is relatively small and static
+
+Model is not intended for real-world deployment without further validation
+
+Ethical considerations and fairness analysis are outside current scope
+
+🧠 Why This Project Matters
+
+Most student-risk models focus only on prediction accuracy.
+This project emphasizes:
+
+Explainability over black-box prediction
+
+Actionability over raw metrics
+
+Human-centered AI design
+
+It demonstrates how AI systems can support decisions rather than replace them.
+
+📬 Author
+
+Developed by Tabyldy Zhansultan
+Background: Information Technology, ML & AI Systems
+Project created for academic and research portfolio purposes.
