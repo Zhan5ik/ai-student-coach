@@ -104,18 +104,19 @@ Run cells from top to bottom
 No local setup required.
 
 Option 2: Run Locally
-git clone https://github.com/Zhan5ik/ai-student-coach.git
-cd ai-student-coach
+
+    git clone https://github.com/Zhan5ik/ai-student-coach.git
+    cd ai-student-coach
 
 
 Create environment and install dependencies:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 
 Open the notebook:
 
-jupyter notebook notebooks/student_risk_decision_support.ipynb
+    jupyter notebook notebooks/student_risk_decision_support.ipynb
 
 # 📌 Example Outputs
 🔹 SHAP Summary Plot
