@@ -39,27 +39,49 @@ This turns a simple classifier into a decision-support system for educators and 
 
 # 📦 Repository Structure
 ai-student-coach/
+
 │
+
 ├── notebooks/
+
 │   └── student_risk_decision_support.ipynb
+
 │      Main notebook demonstrating the full pipeline
+
 │
+
 ├── data/
+
 │   └── student-mat.csv
+
 │      Sample academic dataset (UCI Student Performance Dataset)
+
 │
+
 ├── src/
+
 │   ├── decision_logic.py
+
 │   ├── what_if.py
+
 │   └── utils.py
+
 │      Modularized core logic used in the notebook
+
 │
+
 ├── screenshots/
+
 │   ├── shap_summary.png
+
 │   ├── student_waterfall.png
+
 │   └── what_if_scenarios.png
+
 │      Visual explanations and scenario analysis outputs
+
 │
+
 └── README.md
 
 # 🚀 How to Run This Project
