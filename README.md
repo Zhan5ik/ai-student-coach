@@ -1,4 +1,4 @@
-##AI Student Coach
+## AI Student Coach
 
 Explainable Decision-Support System for Academic Risk Assessment
 
@@ -7,7 +7,7 @@ Unlike typical ML projects that stop at prediction accuracy, this system focuses
 
 The project demonstrates how predictive models can be combined with explainable AI (XAI) and rule-based logic to support real-world educational decisions.
 
-#🎯 Project Goals
+# 🎯 Project Goals
 
 Predict academic risk probability for students
 
@@ -19,7 +19,7 @@ Generate personalized recommendations based on causal factors
 
 Prioritize students who need urgent academic support
 
-#🧠 System Overview
+# 🧠 System Overview
 
 The system follows a multi-stage decision pipeline:
 
@@ -37,7 +37,7 @@ Model predictions + SHAP explanations are translated into concrete academic acti
 
 This turns a simple classifier into a decision-support system for educators and administrators.
 
-#📦 Repository Structure
+# 📦 Repository Structure
 ai-student-coach/
 │
 ├── notebooks/
@@ -62,7 +62,7 @@ ai-student-coach/
 │
 └── README.md
 
-#🚀 How to Run This Project
+# 🚀 How to Run This Project
 Option 1: Run in Google Colab (Recommended)
 
 Open the notebook:
@@ -88,7 +88,7 @@ Open the notebook:
 
 jupyter notebook notebooks/student_risk_decision_support.ipynb
 
-📌 Example Outputs
+# 📌 Example Outputs
 🔹 SHAP Summary Plot
 
 Shows global feature importance across all students and highlights key risk drivers such as past failures, study time, and absences.
@@ -109,7 +109,7 @@ Improving attendance
 
 These outputs allow decision-makers to evaluate which actions are most effective.
 
-🧩 Decision Logic Example
+# 🧩 Decision Logic Example
 
 Instead of raw predictions, the system produces interpretable decisions:
 
@@ -127,12 +127,12 @@ Urgent academic intervention
 
 This bridges the gap between ML predictions and real-world action.
 
-📊 Dataset
+# 📊 Dataset
 
 This project uses the UCI Student Performance Dataset, containing academic, social, and behavioral attributes of students.
 The dataset is used strictly for educational and demonstration purposes.
 
-⚠️ Limitations
+# ⚠️ Limitations
 
 Dataset is relatively small and static
 
@@ -140,7 +140,7 @@ Model is not intended for real-world deployment without further validation
 
 Ethical considerations and fairness analysis are outside current scope
 
-🧠 Why This Project Matters
+# 🧠 Why This Project Matters
 
 Most student-risk models focus only on prediction accuracy.
 This project emphasizes:
@@ -153,7 +153,7 @@ Human-centered AI design
 
 It demonstrates how AI systems can support decisions rather than replace them.
 
-📬 Author
+# 📬 Author
 
 Developed by Tabyldy Zhansultan
 Background: Information Technology, ML & AI Systems
