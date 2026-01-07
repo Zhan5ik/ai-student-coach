@@ -24,15 +24,22 @@ Prioritize students who need urgent academic support
 The system follows a multi-stage decision pipeline:
 
 Risk Prediction
+
 A logistic regression model estimates the probability that a student is academically at risk.
+<img width="850" height="600" alt="Image" src="https://github.com/user-attachments/assets/a2a0aced-2486-481e-a6fe-a02f4a79e37d" />
 
 Explainability (XAI)
+
 SHAP values are used to explain how each feature contributes to an individual prediction.
+<img width="426" height="680" alt="Image" src="https://github.com/user-attachments/assets/4c8a40c2-14f3-402e-b704-db0fcd599383" />
 
 What-If Analysis
+
 Counterfactual scenarios (e.g. increasing study time or reducing absences) simulate how risk changes under interventions.
+<img width="454" height="162" alt="Image" src="https://github.com/user-attachments/assets/2cc7e276-c197-4d96-b458-251c8ec656ec" />
 
 Decision Logic
+
 Model predictions + SHAP explanations are translated into concrete academic actions.
 
 This turns a simple classifier into a decision-support system for educators and administrators.
