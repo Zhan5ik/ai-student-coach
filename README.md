@@ -26,6 +26,7 @@ A supervised ML model estimates the probability that a student is academically a
 2.	Explainability (SHAP):
 
 SHAP values are used to identify which features contribute most to each individual prediction.
+<img width="426" height="680" alt="Image" src="https://github.com/user-attachments/assets/eda8c8f1-e665-44ee-af1a-0a09a94cc3c5" />
 
 3.	What-if Analysis:
 
