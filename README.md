@@ -36,6 +36,7 @@ SHAP values are used to explain how each feature contributes to an individual pr
 What-If Analysis
 
 Counterfactual scenarios (e.g. increasing study time or reducing absences) simulate how risk changes under interventions.
+
 <img width="454" height="162" alt="Image" src="https://github.com/user-attachments/assets/2cc7e276-c197-4d96-b458-251c8ec656ec" />
 
 Decision Logic
